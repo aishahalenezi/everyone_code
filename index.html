@@ -1,183 +1,168 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+Python 3.13.3 (v3.13.3:6280bb54784, Apr  8 2025, 10:47:54) [Clang 15.0.0 (clang-1500.3.9.4)] on darwin
+Enter "help" below or click "Help" above for more information.
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  <meta charset="UTF-8" />
+  <title>Everyone Can Code</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7f9;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .problem {
+      margin-bottom: 40px;
+      padding: 15px;
+      border-left: 4px solid #4a90e2;
+      background: #f9f9f9;
+      border-radius: 5px;
+    }
+    .problem h3 {
+      margin-top: 0;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+      font-family: monospace;
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    .tips {
+      display: none;
+      margin-top: 10px;
+      background: #e8f1fb;
+      padding: 10px;
+      border-left: 3px solid #2a6bbf;
+      border-radius: 4px;
+      transition: all 0.3s ease-in-out;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #4a90e2;
+      color: white;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Everyone Can Code&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: 'Segoe UI', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 0;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f4f7f9;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>header {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #4a90e2;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.container {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>max-width: 900px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin: 30px auto;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>box-shadow: 0 4px 10px rgba(0,0,0,0.1);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.problem {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-bottom: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 4px solid #4a90e2;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #f9f9f9;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 5px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.problem h3 {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>textarea {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>height: 100px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-family: monospace;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>font-size: 14px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border: 1px solid #ccc;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>resize: vertical;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>.tips {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>display: none;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #e8f1fb;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-left: 3px solid #2a6bbf;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>transition: all 0.3s ease-in-out;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>footer {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>text-align: center;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>background: #4a90e2;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>color: white;</p>
-<p class="p1"><span class="Apple-converted-space">      </span>margin-top: 40px;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;header&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h1&gt;Everyone Can Code&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;p&gt;Interactive coding problems for IT beginners&lt;/p&gt;</p>
-<p class="p1">&lt;/header&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;h2&gt;Practice Problems&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Problem template --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;1. Print "Hello, World!"&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Write a program that prints "Hello, World!" to the screen.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use the &lt;code&gt;print()&lt;/code&gt; function in Python or &lt;code&gt;cout&lt;/code&gt; in C++.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Add other problems here... (you can repeat the template above with different content) --&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;2. Add Two Numbers&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Create a program that takes two numbers as input and prints their sum.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use &lt;code&gt;input()&lt;/code&gt; to get values, convert them using &lt;code&gt;int()&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;3. Check Even or Odd&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Ask the user for a number and determine whether it's even or odd.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use the modulo operator: &lt;code&gt;number % 2 == 0&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;4. Find the Largest Number&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Input three numbers and find the largest among them.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use conditional statements: &lt;code&gt;if&lt;/code&gt;, &lt;code&gt;elif&lt;/code&gt;, &lt;code&gt;else&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;5. Simple Calculator&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Write a calculator that can add, subtract, multiply, or divide two numbers based on user choice.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use &lt;code&gt;if-else&lt;/code&gt; or &lt;code&gt;match/case&lt;/code&gt; for operation selection.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;6. Factorial of a Number&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Find the factorial of a number using a loop.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Factorial means multiplying numbers down to 1. Use a &lt;code&gt;for&lt;/code&gt; loop.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;7. Multiplication Table&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Ask the user for a number and display its multiplication table up to 10.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Use a &lt;code&gt;for&lt;/code&gt; loop: &lt;code&gt;for i in range(1, 11)&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;8. Reverse a String&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Input a string and print it in reverse order.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; In Python, use slicing: &lt;code&gt;string[::-1]&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;9. Count Vowels&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Write a program to count the number of vowels in a string.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Loop through the string and check if each character is a vowel.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="problem"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h3&gt;10. Check for Palindrome&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Check if a given string is a palindrome.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;textarea oninput="showTip(this)"&gt;&lt;/textarea&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="tips"&gt;&lt;strong&gt;Tip:&lt;/strong&gt; Compare the string to its reverse: &lt;code&gt;string == string[::-1]&lt;/code&gt;.&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;footer&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&amp;copy; 2025 Everyone Can Code. All rights reserved.</p>
-<p class="p1">&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>function showTip(textarea) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>const tip = textarea.nextElementSibling;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>if (textarea.value.trim() !== "") {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>tip.style.display = "block";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>tip.style.display = "none";</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
-</body>
-</html>
+
+<header>
+  <h1>Everyone Can Code</h1>
+  <p>Interactive coding problems for IT beginners</p>
+</header>
+
+<div class="container">
+  <h2>Practice Problems</h2>
+
+  <!-- Problem template -->
+  <div class="problem">
+    <h3>1. Print "Hello, World!"</h3>
+    <p>Write a program that prints "Hello, World!" to the screen.</p>
+    <textarea oninput="showTip(this)"></textarea>
+    <div class="tips"><strong>Tip:</strong> Use the <code>print()</code> function in Python or <code>cout</code> in C++.</div>
+  </div>
+
+  <!-- Add other problems here... (you can repeat the template above with different content) -->
+
+  <div class="problem">
+    <h3>2. Add Two Numbers</h3>
+    <p>Create a program that takes two numbers as input and prints their sum.</p>
+    <textarea oninput="showTip(this)"></textarea>
+    <div class="tips"><strong>Tip:</strong> Use <code>input()</code> to get values, convert them using <code>int()</code>.</div>
+  </div>
+
+  <div class="problem">
+    <h3>3. Check Even or Odd</h3>
+    <p>Ask the user for a number and determine whether it's even or odd.</p>
+    <textarea oninput="showTip(this)"></textarea>
+    <div class="tips"><strong>Tip:</strong> Use the modulo operator: <code>number % 2 == 0</code>.</div>
+  </div>
+
+  <div class="problem">
+    <h3>4. Find the Largest Number</h3>
+    <p>Input three numbers and find the largest among them.</p>
+    <textarea oninput="showTip(this)"></textarea>
+    <div class="tips"><strong>Tip:</strong> Use conditional statements: <code>if</code>, <code>elif</code>, <code>else</code>.</div>
+  </div>
+
+  <div class="problem">
+    <h3>5. Simple Calculator</h3>
+    <p>Write a calculator that can add, subtract, multiply, or divide two numbers based on user choice.</p>
+    <textarea oninput="showTip(this)"></textarea>
+    <div class="tips"><strong>Tip:</strong> Use <code>if-else</code> or <code>match/case</code> for operation selection.</div>
+...   </div>
+... 
+...   <div class="problem">
+...     <h3>6. Factorial of a Number</h3>
+...     <p>Find the factorial of a number using a loop.</p>
+...     <textarea oninput="showTip(this)"></textarea>
+...     <div class="tips"><strong>Tip:</strong> Factorial means multiplying numbers down to 1. Use a <code>for</code> loop.</div>
+...   </div>
+... 
+...   <div class="problem">
+...     <h3>7. Multiplication Table</h3>
+...     <p>Ask the user for a number and display its multiplication table up to 10.</p>
+...     <textarea oninput="showTip(this)"></textarea>
+...     <div class="tips"><strong>Tip:</strong> Use a <code>for</code> loop: <code>for i in range(1, 11)</code>.</div>
+...   </div>
+... 
+...   <div class="problem">
+...     <h3>8. Reverse a String</h3>
+...     <p>Input a string and print it in reverse order.</p>
+...     <textarea oninput="showTip(this)"></textarea>
+...     <div class="tips"><strong>Tip:</strong> In Python, use slicing: <code>string[::-1]</code>.</div>
+...   </div>
+... 
+...   <div class="problem">
+...     <h3>9. Count Vowels</h3>
+...     <p>Write a program to count the number of vowels in a string.</p>
+...     <textarea oninput="showTip(this)"></textarea>
+...     <div class="tips"><strong>Tip:</strong> Loop through the string and check if each character is a vowel.</div>
+...   </div>
+... 
+...   <div class="problem">
+...     <h3>10. Check for Palindrome</h3>
+...     <p>Check if a given string is a palindrome.</p>
+...     <textarea oninput="showTip(this)"></textarea>
+...     <div class="tips"><strong>Tip:</strong> Compare the string to its reverse: <code>string == string[::-1]</code>.</div>
+...   </div>
+... </div>
+... 
+... <footer>
+...   &copy; 2025 Everyone Can Code. All rights reserved.
+... </footer>
+... 
+... <script>
+...   function showTip(textarea) {
+...     const tip = textarea.nextElementSibling;
+...     if (textarea.value.trim() !== "") {
+...       tip.style.display = "block";
+...     } else {
+...       tip.style.display = "none";
+...     }
+...   }
+... </script>
+... 
+... </body>
